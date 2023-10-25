@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>335</width>
+    <height>472</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(12,12,12);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="1">
+       <widget class="QPushButton" name="push_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPushButton" name="push_equal">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	background-color: rgb(132, 44, 132);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="push_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="push_mult">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(52, 33, 49);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>x</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="push_sub">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(52, 33, 49);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="push_ad">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(52, 33, 49);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="push_7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="push_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="push_1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="push_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="push_9">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>14</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 700 28pt &quot;Nirmala UI&quot;;
+color: rgb(254, 237, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="push_div">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(52, 33, 49);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>÷</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="push_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="push_8">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="push_dot">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QPushButton" name="push_0">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	
+	
+	background-color: rgb(42, 42, 42);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="push_del">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(52, 33, 49);
+}
+
+QPushButton:hover{
+border-radius:20px;
+	background-color: rgb(115, 115, 115);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Del</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QPushButton" name="push_clear">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>10</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+ border-radius: 30px;
+	color: rgb(254, 237, 255);
+	font: 700 18pt &quot;Nirmala UI&quot;;
+	background-color: rgb(235, 110, 110);
+}
+
+QPushButton:hover{
+border-radius: 25px;
+	
+	background-color: rgb(255, 112, 112);
+}</string>
+        </property>
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>335</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
